@@ -49,7 +49,7 @@ struct node * inorderPred(struct node* node)
 {
     struct node* current = node;
 
-    /* loop down to find the leftmost leaf */
+    /* loop down to find the rightmost leaf */
     while (current->right != NULL)
         current = current->right;
 
